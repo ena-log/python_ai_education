@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef2fececbb874c51b3b14bfc39160177 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ef2fececbb874c51b3b14bfc39160177" ></div>
+        
+</body>
+<script>    
+    
+            var map_ef2fececbb874c51b3b14bfc39160177 = L.map(
+                "map_ef2fececbb874c51b3b14bfc39160177",
+                {
+                    center: [37.569918, 126.984528],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6146896d217c482a9b8c5fc28270416a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ef2fececbb874c51b3b14bfc39160177);
+        
+    
+            var marker_ffa30e8e017d4efda3814cce159995a1 = L.marker(
+                [37.569918, 126.984528],
+                {}
+            ).addTo(map_ef2fececbb874c51b3b14bfc39160177);
+        
+    
+        var popup_bcddc3580f324749ae91da35533590fa = L.popup({"maxWidth": 200});
+
+        
+            var html_8fa3716cd3b546cfa6889cfb61840f38 = $(`<div id="html_8fa3716cd3b546cfa6889cfb61840f38" style="width: 100.0%; height: 100.0%;">종각점</div>`)[0];
+            popup_bcddc3580f324749ae91da35533590fa.setContent(html_8fa3716cd3b546cfa6889cfb61840f38);
+        
+
+        marker_ffa30e8e017d4efda3814cce159995a1.bindPopup(popup_bcddc3580f324749ae91da35533590fa)
+        ;
+
+        
+    
+    
+            var marker_f5febd536e0f428bbaa08c33de150e58 = L.marker(
+                [37.569058, 126.986013],
+                {}
+            ).addTo(map_ef2fececbb874c51b3b14bfc39160177);
+        
+    
+        var popup_c1b46f0ca1b940c083359a6a505cbf94 = L.popup({"maxWidth": 200});
+
+        
+            var html_4e808bad77a0444cb43884e6c4dce28e = $(`<div id="html_4e808bad77a0444cb43884e6c4dce28e" style="width: 100.0%; height: 100.0%;">종로관철점</div>`)[0];
+            popup_c1b46f0ca1b940c083359a6a505cbf94.setContent(html_4e808bad77a0444cb43884e6c4dce28e);
+        
+
+        marker_f5febd536e0f428bbaa08c33de150e58.bindPopup(popup_c1b46f0ca1b940c083359a6a505cbf94)
+        ;
+
+        
+    
+</script>

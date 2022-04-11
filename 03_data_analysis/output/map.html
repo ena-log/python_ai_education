@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a7a7cb6fe35345499ebcbe21e722087e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a7a7cb6fe35345499ebcbe21e722087e" ></div>
+        
+</body>
+<script>    
+    
+            var map_a7a7cb6fe35345499ebcbe21e722087e = L.map(
+                "map_a7a7cb6fe35345499ebcbe21e722087e",
+                {
+                    center: [37.566507784366905, 126.97795582695606],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9497f527287b495b8da7c2ddc53a2871 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a7a7cb6fe35345499ebcbe21e722087e);
+        
+    
+            var circle_marker_0a32a45294224ade9bcc1ccf9835fa8b = L.circleMarker(
+                [37.56649928019583, 126.97792364005416],
+                {"bubblingMouseEvents": true, "color": "#DF0101", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFFF00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_a7a7cb6fe35345499ebcbe21e722087e);
+        
+    
+        var popup_3fcc2d6d86d64952af623bd8294f1e7a = L.popup({"maxWidth": 300});
+
+        
+            var html_0f5d39bf0b3b4037a3148c38dc27f5ef = $(`<div id="html_0f5d39bf0b3b4037a3148c38dc27f5ef" style="width: 100.0%; height: 100.0%;">서울특별시청</div>`)[0];
+            popup_3fcc2d6d86d64952af623bd8294f1e7a.setContent(html_0f5d39bf0b3b4037a3148c38dc27f5ef);
+        
+
+        circle_marker_0a32a45294224ade9bcc1ccf9835fa8b.bindPopup(popup_3fcc2d6d86d64952af623bd8294f1e7a)
+        ;
+
+        
+    
+    
+            var circle_marker_d53cb274f30e4ac5ad44b0d729f30822 = L.circleMarker(
+                [37.56590694589004, 126.97516219271532],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_a7a7cb6fe35345499ebcbe21e722087e);
+        
+    
+        var popup_e290b2bc622f4c6a8ea0013d3053b45e = L.popup({"maxWidth": 300});
+
+        
+            var html_58011f9e606346aaabb96bf1f15ebba8 = $(`<div id="html_58011f9e606346aaabb96bf1f15ebba8" style="width: 100.0%; height: 100.0%;">덕수궁</div>`)[0];
+            popup_e290b2bc622f4c6a8ea0013d3053b45e.setContent(html_58011f9e606346aaabb96bf1f15ebba8);
+        
+
+        circle_marker_d53cb274f30e4ac5ad44b0d729f30822.bindPopup(popup_e290b2bc622f4c6a8ea0013d3053b45e)
+        ;
+
+        
+    
+    
+            var marker_ac5c00e8a8c84562b4ac69198cbbca42 = L.marker(
+                [37.57500644389687, 126.9719235827721],
+                {}
+            ).addTo(map_a7a7cb6fe35345499ebcbe21e722087e);
+        
+    
+            var icon_82530104a1d343fc88fe555196acfd5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tower", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ac5c00e8a8c84562b4ac69198cbbca42.setIcon(icon_82530104a1d343fc88fe555196acfd5f);
+        
+    
+        var popup_593e831176bb457aa9eed71ca06f2c33 = L.popup({"maxWidth": 300});
+
+        
+            var html_5d08891325054aadb4ddcb63a2fe4a15 = $(`<div id="html_5d08891325054aadb4ddcb63a2fe4a15" style="width: 100.0%; height: 100.0%;">서울지방경찰청</div>`)[0];
+            popup_593e831176bb457aa9eed71ca06f2c33.setContent(html_5d08891325054aadb4ddcb63a2fe4a15);
+        
+
+        marker_ac5c00e8a8c84562b4ac69198cbbca42.bindPopup(popup_593e831176bb457aa9eed71ca06f2c33)
+        ;
+
+        
+    
+    
+            var marker_6fcdf78871ca408ea7cc676afcd64bd6 = L.marker(
+                [37.57622235345115, 126.97691299811414],
+                {}
+            ).addTo(map_a7a7cb6fe35345499ebcbe21e722087e);
+        
+    
+            var icon_78d74a5564134851b3746ffbdc2d210f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_6fcdf78871ca408ea7cc676afcd64bd6.setIcon(icon_78d74a5564134851b3746ffbdc2d210f);
+        
+    
+        var popup_fca0bfd2aa3c41848bb1131dc3b30933 = L.popup({"maxWidth": 300});
+
+        
+            var html_79de05d3a0ee4da59ff81098c19a1169 = $(`<div id="html_79de05d3a0ee4da59ff81098c19a1169" style="width: 100.0%; height: 100.0%;">광화문</div>`)[0];
+            popup_fca0bfd2aa3c41848bb1131dc3b30933.setContent(html_79de05d3a0ee4da59ff81098c19a1169);
+        
+
+        marker_6fcdf78871ca408ea7cc676afcd64bd6.bindPopup(popup_fca0bfd2aa3c41848bb1131dc3b30933)
+        ;
+
+        
+    
+    
+            var marker_c6a78540727d4fc39a363629f28603b3 = L.marker(
+                [37.57002498561249, 126.98231609811403],
+                {}
+            ).addTo(map_a7a7cb6fe35345499ebcbe21e722087e);
+        
+    
+        var popup_7c5727bacaf34b6781298d6e3559810e = L.popup({"maxWidth": 300});
+
+        
+            var html_b83139c6fd994da2a31a3a26985cc4f6 = $(`<div id="html_b83139c6fd994da2a31a3a26985cc4f6" style="width: 100.0%; height: 100.0%;">영풍문고 - 종로본점</div>`)[0];
+            popup_7c5727bacaf34b6781298d6e3559810e.setContent(html_b83139c6fd994da2a31a3a26985cc4f6);
+        
+
+        marker_c6a78540727d4fc39a363629f28603b3.bindPopup(popup_7c5727bacaf34b6781298d6e3559810e)
+        ;
+
+        
+    
+    
+            var marker_36032796d6ce43f09b96402691bfc8aa = L.marker(
+                [37.5588650250775, 126.97854823800259],
+                {}
+            ).addTo(map_a7a7cb6fe35345499ebcbe21e722087e);
+        
+    
+        var popup_298ff23cf0ab4c7ead9a5242d98c6b33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e08fb04cf8d4c38990499a52e46381b = $(`<div id="html_7e08fb04cf8d4c38990499a52e46381b" style="width: 100.0%; height: 100.0%;">회현역</div>`)[0];
+            popup_298ff23cf0ab4c7ead9a5242d98c6b33.setContent(html_7e08fb04cf8d4c38990499a52e46381b);
+        
+
+        marker_36032796d6ce43f09b96402691bfc8aa.bindPopup(popup_298ff23cf0ab4c7ead9a5242d98c6b33)
+        ;
+
+        
+    
+</script>
